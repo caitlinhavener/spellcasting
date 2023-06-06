@@ -54,12 +54,18 @@ define( 'PLUGIN_NAME_VERSION', '1.0.0' );
     ＼二)
  * 
  * CAITLIN Requirements for the Plugin_Name_Activator class:
- * 1. Function to create database tables  
+ * 1. Function to create database tables - you are waiting on me for database architecture 
+ * 2. Function to install Gravity forms and the add-ons (this is a stretch goal for later)
+ * 3. Function to create instance of our form
+ *      https://docs.gravityforms.com/creating-forms-with-the-gfapi/ This is to create
+ *      I cannot find an example online, so we'll have to just go for it!
+ *      This should only register the form. It will not display it. We will do that later.
+ *      To figure out what needs to go in the parameters array. Echo this function out on the page with the form you created with the GUI $result = GFAPI::get_form( $form_id );
  * 
  */
 function activate_plugin_name() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-activator.php';
-	Plugin_Name_Activator::activate();
+	class Spells_Activation::activate();
 }
 
 /**

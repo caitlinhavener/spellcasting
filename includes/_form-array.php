@@ -1,46 +1,8 @@
 <?php
 
-/**
- * Fired during plugin activation
- *
- * @link       http://example.com
- * @since      1.0.0
- *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
- */
-
-/**
- * Fired during plugin activation.
- *
- * This class defines all code necessary to run during the plugin's activation.
- *
- * @since      1.0.0
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
- * @author     Your Name <email@example.com>
- */
-class Spells_Activation {
-
-	/**
-	 * Short Description. (use period)
-	 *
-	 * Long Description.
-	 *
-	 * @since    1.0.0
-	 */
-	public static function activate() {
-
-	}
-
-    public static function register_form() {
-
-    }
-
-
-    private $formarray = new Array(
+$form_array = Array
 (
-    "fields" => Array
+    [fields] => Array
         (
             [0] => GF_Field_Select Object
                 (
@@ -1914,6 +1876,6 @@ class Spells_Activation {
     [is_active] => 1
     [date_created] => 2023-06-05 14:55:43
     [is_trash] => 0
-) );
+)
 
-}
+?>
