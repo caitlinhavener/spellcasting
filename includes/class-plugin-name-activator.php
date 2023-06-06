@@ -20,6 +20,7 @@
  * @subpackage Plugin_Name/includes
  * @author     Your Name <email@example.com>
  */
+
 class Spells_Activation {
 
 	/**
@@ -32,6 +33,7 @@ class Spells_Activation {
 	public static function activate() {
 
 	}
+
 
     public static function register_form() {
 
